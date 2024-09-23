@@ -57,7 +57,7 @@ class Tutor extends Backbone.Controller {
         break;
       case TUTOR_TYPE.INLINE:
       case TUTOR_TYPE.OVERLAY:
-        view.$('.component__inner').append(new TutorView(options).$el);
+        view.$('.btn__container').before(new TutorView(options).$el);
         break;
       case TUTOR_TYPE.NONE:
       default:
